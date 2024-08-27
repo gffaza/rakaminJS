@@ -1,0 +1,136 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan JavaScript</title>
+</head>
+
+<body>
+
+  <div class="catatan">
+
+    <!-- 
+    <h2>JavaScript Functions</h2>
+
+    <p>This example calls a function which performs a calculation, and returns the results:</p>
+    <p id="demo"></p>
+
+    <script src="script.js"></script> -->
+
+    <!-- <h2>Variabel dan Tipe Data JavaScript</h2>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+
+    <script>
+        let numberVariable = 42;
+        let stringVariable = "Hello, world!";
+        let booleanVariable = true;
+
+        document.getElementById("output1").innerHTML = "Nilai dari numberVariable: " +numberVariable;
+        document.getElementById("output2").innerHTML = "Nilai dari stringVariable: " +stringVariable;
+        document.getElementById("output3").innerHTML = "Nilai dari booleanVariable: " +booleanVariable;
+
+    </script> -->
+    <!-- 
+    <h2>Javascript Variables and Data Types</h2>
+    <p id="output1"></p>
+    <p id="output2"></p>
+    <p id="output3"></p>
+
+    <h2>Javascript Operator</h2>
+    <p id="arithmetic"></p>
+    <p id="comparison"></p>
+    <p id="logical"></p>
+
+    <script>
+      let a = 10;
+      let b = 5;
+      let arithmeticResult = `
+        Addition: ${a + b}<br>
+        Substraction: ${a - b}<br>
+        Multiplication: ${a * b}<br>
+        Division: ${a / b}<br>
+        Modulus: ${a % b}<br>
+        Exponentiation: ${a ** b}<br>
+        Increment: ${++a}<br>
+        Decrement: ${--b}<br>
+      `;
+      document.getElementById("arithmetic").innerHTML = arithmeticResult;
+
+      let comparisonResult = `
+        Equal: ${a == b}<br>
+        Not Equal: ${a != b}<br>
+        Strict Equal: ${a === b}<br>
+        Strict not Equal: ${a !== b}<br>
+        Greater than: ${a > b}<br>
+        Less than: ${a < b}<br>
+        Greater than or equal: ${a >= b}<br>
+        Less than or equal: ${a <= b}<br>
+      `;
+
+      document.getElementById("comparison").innerHTML = comparisonResult;
+
+      const p = true;
+      const q = false;
+
+      let logicalResult = `
+        AND: ${p && q}<br>
+        OR: ${p || q}<br>
+        NOT: ${!p}<br>
+        Ternary: ${p ? "True" : "False"}<br>
+      `;
+
+      document.getElementById("logical").innerHTML = logicalResult;
+    </script>
+
+    <script>
+      let numberVariable = 43;
+      let stringVariable = "Hello, world!";
+      let booleanVariable = true;
+
+      document.getElementById("output1").innerHTML =
+        "nilai dari numberVariable: " + numberVariable;
+      document.getElementById("output2").innerHTML =
+        "nilai dari stringVariable: " + stringVariable;
+      document.getElementById("output3").innerHTML =
+        "nilai dari booleanVariable: " + booleanVariable;
+    </script>
+    <script src="index.js"></script> -->
+
+  </div>
+  <h2> Penilaian Grade Mahasiswa Berdasarkan IPK</h2>
+  <p>
+    Masukan IPK Mahasiswa
+  </p>
+  <input type="number" min="0" max="4" step="0.01" name="" id="ipk">
+  <button onclick="tentukanGrade()">Tentukan grade</button>
+  <p id="hasil"></p>
+
+  <script>
+    function tentukanGrade() {
+      let ipk = parseFloat(document.getElementById("ipk").value);
+      let grade;
+
+      // if (ipk > 3.5) {
+      //   grade = "Cumlaude"
+      // } else if (ipk >= 3.0 && ipk <= 3.5) {
+      //   grade = "Baik"
+      // } else {
+      //   grade = "Cukup"
+      // // }
+      // ------------------------------------------------------
+      // for (let x of ipk){
+      //   console.log(x)
+      // }
+
+      // document.getElementById("hasil").innerHTML = "Grade : " + grade;
+
+    }
+  </script>
+</body>
+
+<!-- <script src="server.js"></script> -->
+
+</html>
